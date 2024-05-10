@@ -70,11 +70,6 @@ updates:
     schedule:
       interval: "weekly"
 ```
-
-**Python Code:**
-
-Here's an example of Python code for implementing secure infrastructure, considering our experience in the cryptocurrency space:
-
 ```python
 import hashlib
 import hmac
