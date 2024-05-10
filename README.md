@@ -58,7 +58,7 @@ africacryptochainx.com
 
 **Security Considerations:**
 
-To ensure the security and reliability of AfricaCryptoChainx, we will use Dependabot to automatically update project dependencies and apply security patches promptly. Here's how to integrate Dependabot:
+To ensure the security and reliability of AfricaCryptoChainx, we will use Dependabot to automatically update project dependencies and apply security patches promptly. 
 
 ```yaml
 # .github/dependabot.yml
@@ -114,7 +114,7 @@ This Python code snippet demonstrates how to implement secure infrastructure mea
 ```
 
 This integration combines the project information with Dependabot configuration and Python code that reflects best practices in the cryptocurrency space, focusing on security and reliability.
-[4/26, 4:27 PM] patrick91: yaml
+yaml
 # .github/dependabot.yml
 
 version: 2
