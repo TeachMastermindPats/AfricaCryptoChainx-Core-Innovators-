@@ -1,0 +1,99 @@
+{
+  "id": 945794,
+  "name": "AfricaCryptoChainx.Com",
+  "target": "branch",
+  "source_type": "Repository",
+  "source": "Africacryptochainx-Com/AfricaCryptoChainx.Com-.",
+  "enforcement": "active",
+  "conditions": {},
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    },
+    {
+      "type": "creation"
+    },
+    {
+      "type": "required_linear_history"
+    },
+    {
+      "type": "required_signatures"
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 0,
+        "dismiss_stale_reviews_on_push": false,
+        "require_last_push_approval": true,
+        "required_review_thread_resolution": true
+      }
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": true,
+        "required_status_checks": [
+          {
+            "context": "```markdown # AfricaCryptoChainx.Com CI Workflow and Project Information  _Transforming financial inclusion and sustainability through secure, accessible, and innovative financial services._  ## Tool Name: AfricaCryptoChainx.Com  Welcome to AfricaCryptoChainx, a revolutionary initiative aimed at transforming the financial landscape in Africa by seamlessly integrating traditional banking systems with cutting-edge blockchain technology. Our mission is to provide secure, accessible, and inclusive financial services, fostering innovation, collaboration, and sustainable development across the continent.  ### Checks  #### Platform Overview  - **Mission**: To transform financial services in Africa through blockchain integration. - **Goals**: Secure, accessible, and inclusive financial solutions. - **Audience**: Developers, blockchain enthusiasts, and financial technology innovators.  #### Project Scope  - **Size**: Medium. - **Complexity**: Integrates traditional banking with blockchain technology. - **Focus**: Financial inclusion, sustainability, and innovation.  #### CI Workflow  - **Automation**: CI setup automates build, test, and deploy processes. - **Tool**: Utilizes GitHub Actions for workflow automation. - **Example**: `blank.yml` configures basic CI workflow.  #### Milestones  - **Version 1.0 Launch**: Scheduled for June 30, 2024. - **Objectives**: Secure infrastructure, DeFi integration, community building. - **Tasks**: Documentation, beta testing, marketing, access control.  #### Security Measures  - **Dependencies**: Regular updates and secure coding practices. - **Examples**: Dependabot configuration, secure infrastructure Python code.  #### Development Guidelines  - **Prerequisites**: GitHub, CI/CD, basic Python knowledge. - **Instructions**: Step-by-step guide in README for setup.  #### Support and Resources  - **Community**: Engagement initiatives to support users. - **Documentation**: User and developer guides for clarity.  #### Additional Features  - **Enhancements**: Feature request template for user input. - **Benefits**: Fiat deposit security, lower fees, larger transaction limits.  #### Conclusion  AfricaCryptoChainx.Com aims to revolutionize African financial services through secure, accessible, and innovative solutions. This document provides a comprehensive overview of its CI workflow, project milestones, security considerations, and development guidelines.  ## Getting Started  To begin contributing to AfricaCryptoChainx.Com, follow these steps to clone the repository...  ```  In this revised version: - **Checks** section categorically breaks down various aspects of the project. - **Project Scope** highlights the size and complexity of the initiative. - **Development Guidelines** and **Support and Resources** sections ensure clarity on prerequisites and available support. - **Conclusion** summarizes the platform's goals and what the document covers."
+          }
+        ]
+      }
+    },
+    {
+      "type": "code_scanning",
+      "parameters": {
+        "code_scanning_tools": [
+          {
+            "tool": "AfricaCryptoChainx.Com",
+            "security_alerts_threshold": "high_or_higher",
+            "alerts_threshold": "errors"
+          },
+          {
+            "tool": "CodeQL",
+            "security_alerts_threshold": "high_or_higher",
+            "alerts_threshold": "errors"
+          }
+        ]
+      }
+    },
+    {
+      "type": "branch_name_pattern",
+      "parameters": {
+        "operator": "starts_with",
+        "pattern": " ```regex \\bmy project information\\b ```  ### Explanation of the Regex Pattern: - `\\b`: Word boundary ensures that \"my project information\" is matched as a whole word. - `my project information`: This literal text specifies the exact phrase you're looking for. - `\\b`: Another word boundary ensures the phrase is matched completely.  ### Usage Examples:  #### Using `grep` in Unix/Linux:  To search for lines containing \"my project information\":  ```bash grep -E \"\\bmy project information\\b\" <file_name> ```  Replace `<file_name>` with the actual file you want to search in.  #### In Python:  ```python import re  text = \"\"\"Your project information can be found in the documentation. For my project information is crucial for our stakeholders. \"\"\"  pattern = r'\\bmy project information\\b' matches = re.findall(pattern, text)  for match in matches:     print(match) ```  This Python script will print occurrences of \"my project information\" as a whole word in the `text`.  ### Notes: - Adjust the regex pattern (`\\bmy project information\\b`) as needed based on specific requirements or variations in your text. - Regular expressions offer flexibility but may require careful testing and adjustment to match exactly what you intend. - The `\\b` word boundary ensures that you're matching the exact phrase and not parts of other words that contain similar sequences.",
+        "negate": false,
+        "name": "   ### Description of `\\bmy project information\\b` Regex Pattern  The regex pattern `\\bmy project information\\b` is designed to match the exact phrase \"my project information\" as a whole word within a text or data source. Here's a breakdown of its components and usage:  - **`\\b`**: The `\\b` metacharacter denotes a word boundary, ensuring that \"my project information\" is matched as a complete word and not as part of a longer word or phrase.  - **`my project information`**: This is the literal text string that the pattern seeks to match precisely. It must appear exactly as specified, including capitalization and spacing.  - **`\\b`**: Another `\\b` ensures that the pattern matches \"my project information\" as a standalone word, ensuring accuracy and avoiding partial matches.  ### Purpose and Usage:  - **Purpose**: This pattern is useful for identifying instances where the specific phrase \"my project information\" occurs within a document or dataset. It ensures that only exact matches are captured, enhancing search precision.  - **Usage**:    - **Command-Line Tools**: Use this pattern with tools like `grep` on Unix/Linux systems to search for lines containing \"my project information\" in files.     ```bash     grep -E \"\\bmy project information\\b\" <file_name>     ```   - **Programming Languages**: Implement this pattern in programming languages such as Python using the `re` module to find occurrences within strings or data structures.     ```python     import re          text = \"For my project information, please refer to the documentation.\"     pattern = r'\\bmy project information\\b'     matches = re.findall(pattern, text)     print(matches)  # Output: ['my project information']     ```  ### Considerations:  - **Adjustments**: Modify the pattern as needed for case sensitivity (`\\bMy Project Information\\b`), plural forms (`\\bmy project informations?\\b`), or variations in text structure.  - **Regex Flexibility**: While powerful, regex patterns require testing and adjustment to match specific variations in text content accurately.  ### Conclusion:  The `\\bmy project information\\b` regex pattern ensures precise matching of the exact phrase \"my project information\" as a standalone word, facilitating accurate identification and retrieval within textual data."
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": 2,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": 4,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": 5,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": 1,
+      "actor_type": "OrganizationAdmin",
+      "bypass_mode": "always"
+    },
+    {
+      "actor_id": null,
+      "actor_type": "DeployKey",
+      "bypass_mode": "always"
+    }
+  ]
+}
