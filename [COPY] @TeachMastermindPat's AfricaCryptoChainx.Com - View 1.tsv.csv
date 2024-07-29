@@ -1,0 +1,1 @@
+Assignees	```sql ALTER TABLE transactions ADD transaction_fee DECIMAL(10, 2) NOT NULL DEFAULT 0.00; 	Title	Status
