@@ -586,11 +586,15 @@ To contribute to AfricaCryptoChainx.Com and explore our CI workflow, follow thes
   - BakeryToken (BAKE)
   - My Neighbour Alice (ALICE)
 
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)
 ```markdown
 ### Cryptocurrency Integration
 AfricaCryptoChainx aims to introduce its own native coins alongside established cryptocurrencies to support financial inclusion and DeFi functionalities in Africa. Potential coin names include:
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)
 - AfricaCryptoChainx Coin (ACC)
 - Africoin (AFR)
 - AfroToken (AFT)
