@@ -2295,7 +2295,11 @@ AfricaCryptoChainx.Com is committed to driving positive change by providing secu
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt&type=Date)](https://star-history.com/#ccxt/ccxt&Date)
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)https://opencollective.com/teachmastermindpat## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)https://x.com/Cryptorollermin?t=LqCli7-WGitXJQsRrDwLDw&s=09https://github.com/Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation
 ## Contact Us
 
 For business inquiries: info@ccxt.trade
