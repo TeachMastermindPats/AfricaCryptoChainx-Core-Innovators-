@@ -152,7 +152,21 @@ AfricaCryptoChainx aims to introduce its own native coins alongside established 
 - Citadel Token (CTT)
 - Foundation Coin (FDT)
 - Legacy Token (LGC)
+https://github.com/Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git```sql
+SELECT * FROM your_table
+WHERE keyword IN ('Alien Innovation', 'Blockchain', 'Cryptocurrency', 'Data Privacy', 'Security')
+OR field_name IN ('alien', 'blockchain', 'security');
+```
 
+**Python Example:**
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({'keyword': ['Alien Innovation', 'Blockchain'], 'field_name': ['alien', 'blockchain']})
+filtered_df = df[df['keyword'].isin(['Alien Innovation', 'Blockchain']) | df['field_name'].isin(['alien', 'blockchain'])]
+print(filtered_df)
+```
 These native coins will facilitate secure and accessible financial services tailored for African communities, promoting economic empowerment and sustainable development.
 
 ### Trading and Exchange
