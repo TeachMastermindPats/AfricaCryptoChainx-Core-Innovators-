@@ -1022,16 +1022,194 @@ AfricaCryptoChainx aims to introduce its own native coins alongside established 
 - Citadel Token (CTT)
 - Foundation Coin (FDT)
 - Legacy Token (LGC)
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)https://opencollective.com/teachmastermindpat## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)https://x.com/Cryptorollermin?t=LqCli7-WGitXJQsRrDwLDw&s=09https://github.com/Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation```Dockerfile
+# Source: https://github.com/dotnet/dotnet-docker
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy as build
+
+ARG TARGETOS
+ARG TARGETARCH
+ARG RUNNER_VERSION
+ARG RUNNER_CONTAINER_HOOKS_VERSION=0.6.0
+ARG DOCKER_VERSION=25.0.4
+ARG BUILDX_VERSION=0.13.1
+
+# Combine apt update and install to reduce layers
+RUN apt update -y && apt install -y curl unzip && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /actions-runner
+
+# Download and extract GitHub Actions Runner based on architecture
+RUN export RUNNER_ARCH=${TARGETARCH} \
+    && [ "$RUNNER_ARCH" = "amd64" ] && RUNNER_ARCH=x64 \
+    || true \
+    && curl -f -L -o runner.tar.gz https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-${TARGETOS}-${RUNNER_ARCH}-${RUNNER_VERSION}.tar.gz \
+    && tar xzf runner.tar.gz \
+    && rm runner.tar.gz
+
+# Download and extract GitHub Actions Container Hooks
+RUN curl -f -L -o runner-container-hooks.zip https://github.com/actions/runner-container-hooks/releases/download/v${RUNNER_CONTAINER_HOOKS_VERSION}/actions-runner-hooks-k8s-${RUNNER_CONTAINER_HOOKS_VERSION}.zip \
+    && unzip runner-container-hooks.zip -d ./k8s \
+    && rm runner-container-hooks.zip
+
+# Download Docker and Buildx plugin based on architecture
+RUN export DOCKER_ARCH=${TARGETARCH} \
+    && [ "$DOCKER_ARCH" = "amd64" ] && DOCKER_ARCH=x86_64 \
+    || [ "$DOCKER_ARCH" = "arm64" ] && DOCKER_ARCH=aarch64 \
+    && curl -fLo docker.tgz https://download.docker.com/${TARGETOS}/static/stable/${DOCKER_ARCH}/docker-${DOCKER_VERSION}.tgz \
+    && tar zxvf docker.tgz \
+    && rm docker.tgz \
+    && mkdir -p /usr/local/lib/docker/cli-plugins \
+    && curl -fLo /usr/local/lib/docker/cli-plugins/docker-buildx "https://github.com/docker/buildx/releases/download/v${BUILDX_VERSION}/buildx-v${BUILDX_VERSION}.linux-${TARGETARCH}" \
+    && chmod +x /usr/local/lib/docker/cli-plugins/docker-buildx
+
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV RUNNER_MANUALLY_TRAP_SIG=1
+ENV ACTIONS_RUNNER_PRINT_LOG_TO_STDOUT=1
+ENV ImageOS=ubuntu22
+
+# Install necessary dependencies for Git and add the Git PPA
+RUN apt update -y \
+    && apt install -y --no-install-recommends sudo lsb-release gpg-agent software-properties-common \
+    && add-apt-repository ppa:git-core/ppa \
+    && apt update -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# Add a non-root user and configure sudo permissions
+RUN adduser --disabled-password --gecos "" --uid 1001 runner \
+    && groupadd docker --gid 123 \
+    && usermod -aG sudo runner \
+    && usermod -aG docker runner \
+    && echo "%sudo   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers \
+    && echo "Defaults env_keep += \"DEBIAN_FRONTEND\"" >> /etc/sudoers
+
+WORKDIR /home/runner
+
+# Copy the runner and docker components from the build stage
+COPY --chown=runner:docker --from=build /actions-runner .
+COPY --from=build /usr/local/lib/docker/cli-plugins/docker-buildx /usr/local/lib/docker/cli-plugins/docker-buildx
+
+# Install Docker binaries and clean up unnecessary files
+RUN install -o root -g root -m 755 docker/* /usr/bin/ && rm -rf docker
+
+# Switch to the non-root user for running the container
+USER runner
+```
+
+### Changes Made:
+1. **Layer Efficiency**:
+   - Combined multiple `RUN` commands where possible to reduce the number of layers in the final image.
+   - Cleaned up the `apt` lists after installation to minimize the image size.
+   
+2. **Logical Flow**:
+   - Simplified `RUNNER_ARCH` and `DOCKER_ARCH` selection using conditional statements.
+   
+3. **Docker and Buildx**:
+   - Consolidated Docker and Buildx plugin download and installation into a single `RUN` statement.
 These native coins will facilitate secure and accessible financial services tailored for African communities, promoting economic empowerment and sustainable development.
 
 ### Trading and Exchange
 The native coins developed by AfricaCryptoChainx, including ACC, AFR, AFT, and others, will be listed on cryptocurrency exchanges. This allows users to buy, sell, and trade these coins alongside established cryptocurrencies such as Bitcoin (BTC), Ethereum (ETH), Binance Coin (BNB), Stablecoins (USDT, USDC, DAI), Cardano (ADA), Solana (SOL), Polkadot (DOT), Chainlink (LINK), Litecoin (LTC), and African-based coins like Akoin, BakeryToken (BAKE), and My Neighbour Alice (ALICE). Users can participate in the market value of these coins through various trading pairs offered by exchanges.
 ```
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)https://opencollective.com/teachmastermindpat## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)https://x.com/Cryptorollermin?t=LqCli7-WGitXJQsRrDwLDw&s=09https://github.com/Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation```Dockerfile
+# Source: https://github.com/dotnet/dotnet-docker
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy as build
+
+ARG TARGETOS
+ARG TARGETARCH
+ARG RUNNER_VERSION
+ARG RUNNER_CONTAINER_HOOKS_VERSION=0.6.0
+ARG DOCKER_VERSION=25.0.4
+ARG BUILDX_VERSION=0.13.1
+
+# Combine apt update and install to reduce layers
+RUN apt update -y && apt install -y curl unzip && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /actions-runner
+
+# Download and extract GitHub Actions Runner based on architecture
+RUN export RUNNER_ARCH=${TARGETARCH} \
+    && [ "$RUNNER_ARCH" = "amd64" ] && RUNNER_ARCH=x64 \
+    || true \
+    && curl -f -L -o runner.tar.gz https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-${TARGETOS}-${RUNNER_ARCH}-${RUNNER_VERSION}.tar.gz \
+    && tar xzf runner.tar.gz \
+    && rm runner.tar.gz
+
+# Download and extract GitHub Actions Container Hooks
+RUN curl -f -L -o runner-container-hooks.zip https://github.com/actions/runner-container-hooks/releases/download/v${RUNNER_CONTAINER_HOOKS_VERSION}/actions-runner-hooks-k8s-${RUNNER_CONTAINER_HOOKS_VERSION}.zip \
+    && unzip runner-container-hooks.zip -d ./k8s \
+    && rm runner-container-hooks.zip
+
+# Download Docker and Buildx plugin based on architecture
+RUN export DOCKER_ARCH=${TARGETARCH} \
+    && [ "$DOCKER_ARCH" = "amd64" ] && DOCKER_ARCH=x86_64 \
+    || [ "$DOCKER_ARCH" = "arm64" ] && DOCKER_ARCH=aarch64 \
+    && curl -fLo docker.tgz https://download.docker.com/${TARGETOS}/static/stable/${DOCKER_ARCH}/docker-${DOCKER_VERSION}.tgz \
+    && tar zxvf docker.tgz \
+    && rm docker.tgz \
+    && mkdir -p /usr/local/lib/docker/cli-plugins \
+    && curl -fLo /usr/local/lib/docker/cli-plugins/docker-buildx "https://github.com/docker/buildx/releases/download/v${BUILDX_VERSION}/buildx-v${BUILDX_VERSION}.linux-${TARGETARCH}" \
+    && chmod +x /usr/local/lib/docker/cli-plugins/docker-buildx
+
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV RUNNER_MANUALLY_TRAP_SIG=1
+ENV ACTIONS_RUNNER_PRINT_LOG_TO_STDOUT=1
+ENV ImageOS=ubuntu22
+
+# Install necessary dependencies for Git and add the Git PPA
+RUN apt update -y \
+    && apt install -y --no-install-recommends sudo lsb-release gpg-agent software-properties-common \
+    && add-apt-repository ppa:git-core/ppa \
+    && apt update -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# Add a non-root user and configure sudo permissions
+RUN adduser --disabled-password --gecos "" --uid 1001 runner \
+    && groupadd docker --gid 123 \
+    && usermod -aG sudo runner \
+    && usermod -aG docker runner \
+    && echo "%sudo   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers \
+    && echo "Defaults env_keep += \"DEBIAN_FRONTEND\"" >> /etc/sudoers
+
+WORKDIR /home/runner
+
+# Copy the runner and docker components from the build stage
+COPY --chown=runner:docker --from=build /actions-runner .
+COPY --from=build /usr/local/lib/docker/cli-plugins/docker-buildx /usr/local/lib/docker/cli-plugins/docker-buildx
+
+# Install Docker binaries and clean up unnecessary files
+RUN install -o root -g root -m 755 docker/* /usr/bin/ && rm -rf docker
+
+# Switch to the non-root user for running the container
+USER runner
+```
+
+### Changes Made:
+1. **Layer Efficiency**:
+   - Combined multiple `RUN` commands where possible to reduce the number of layers in the final image.
+   - Cleaned up the `apt` lists after installation to minimize the image size.
+   
+2. **Logical Flow**:
+   - Simplified `RUNNER_ARCH` and `DOCKER_ARCH` selection using conditional statements.
+   
+3. **Docker and Buildx**:
+   - Consolidated Docker and Buildx plugin download and installation into a single `RUN` statement.
 
 ### Funding
-AfricaCryptoChainx.Com is seeking one-time funding between $50,000 to $100,000 to:
+AfricaCryptoChainx.Com is seeking one-time funding between $100,000 to $500,000 to:
 - Deploy secure infrastructure.
 - Integrate with local P2P networks.
 - Implement advanced security measures.
@@ -1398,31 +1576,31 @@ AfricaCryptoChainx.Com is committed to driving positive change by providing secu
 - [![GitHub license](https://img.shields.io/github/license/AfricaCryptoChai# CCXT – CryptoCurrency eXchange Trading Library
 ### 1. **Budget Allocation**
 
-1. **Secure Infrastructure (₦30,000 - ₦40,000)**
+1. **Secure Infrastructure (₦40,000 - ₦50,000)**
    - **Server Costs**: Hosting, cloud services.
    - **Security Tools**: SSL certificates, firewalls.
 
-2. **P2P Network Integration (₦20,000 - ₦25,000)**
+2. **P2P Network Integration (₦25,000 - ₦30,000)**
    - **Integration Fees**: Costs for connecting with local P2P networks.
    - **API Development**: Building and maintaining integration APIs.
 
-3. **Advanced Security Measures (₦15,000 - ₦20,000)**
+3. **Advanced Security Measures (₦20,000 - ₦22,000)**
    - **Security Audits**: Regular security reviews and vulnerability assessments.
    - **Security Tools**: Anti-fraud and monitoring systems.
 
-4. **User Interface Development (₦15,000 - ₦20,000)**
+4. **User Interface Development (₦20,000 - ₦25,000)**
    - **Design and Development**: UI/UX design, front-end development.
    - **Testing**: User experience and usability testing.
 
-5. **Educational Resources (₦10,000 - ₦15,000)**
+5. **Educational Resources (₦15,000 - ₦20,000)**
    - **Content Creation**: Guides, tutorials, and support documents.
    - **Translation Services**: Localization for different African languages.
 
-6. **Community Building (₦10,000 - ₦15,000)**
+6. **Community Building (₦15,000 - ₦20,000)**
    - **Marketing**: Social media campaigns, community outreach.
    - **Events**: Webinars, meetups.
 
-7. **DeFi Functionalities (₦10,000 - ₦15,000)**
+7. **DeFi Functionalities (₦15,000 - ₦20,000)**
    - **Integration**: Adding DeFi features like staking, lending.
    - **Development**: Building smart contracts and DeFi protocols.
 
