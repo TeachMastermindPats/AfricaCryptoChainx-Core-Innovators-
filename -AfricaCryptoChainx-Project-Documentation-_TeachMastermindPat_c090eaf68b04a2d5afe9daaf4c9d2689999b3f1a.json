@@ -1,6 +1,4 @@
 
-
-```json
 {
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
@@ -42,11 +40,6 @@
   "relationships": []
 }
 ```
-
-### Key Changes:
-- Removed unnecessary dashes in the project name.
-- Used `"unspecified"` for `versionInfo` to clarify that no version is provided.
-- Updated `documentNamespace` and `documentDescribes` fields for consistency with the project name.
 
 {"SPDXID":"SPDXRef-DOCUMENT","spdxVersion":"SPDX-2.3","creationInfo":{"created":"2024-07-10T18:25:35Z","creators":["Tool: GitHub.com-Dependency-Graph"]},"name":"com.github.TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-","dataLicense":"CC0-1.0","documentDescribes":["SPDXRef-com.github.TeachMastermindPat--AfricaCryptoChainx-Project-Documentation-"],"documentNamespace":"https://github.com/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-/dependency_graph/sbom-aa2a776d9f2c83ca","packages":[{"SPDXID":"SPDXRef-com.github.TeachMastermindPat--AfricaCryptoChainx-Project-Documentation-","name":"com.github.TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-","versionInfo":"","downloadLocation":"git+https://github.com/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-","licenseDeclared":"MIT","filesAnalyzed":false,"supplier":"NOASSERTION","externalRefs":[{"referenceCategory":"PACKAGE-MANAGER","referenceType":"purl","referenceLocator":"pkg:github/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-"}]}],"relationships":[]}
 {
