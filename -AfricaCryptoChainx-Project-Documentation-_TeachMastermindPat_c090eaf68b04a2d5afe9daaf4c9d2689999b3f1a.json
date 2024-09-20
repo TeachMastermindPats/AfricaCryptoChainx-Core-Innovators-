@@ -1,1 +1,77 @@
 {"SPDXID":"SPDXRef-DOCUMENT","spdxVersion":"SPDX-2.3","creationInfo":{"created":"2024-07-10T18:25:35Z","creators":["Tool: GitHub.com-Dependency-Graph"]},"name":"com.github.TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-","dataLicense":"CC0-1.0","documentDescribes":["SPDXRef-com.github.TeachMastermindPat--AfricaCryptoChainx-Project-Documentation-"],"documentNamespace":"https://github.com/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-/dependency_graph/sbom-aa2a776d9f2c83ca","packages":[{"SPDXID":"SPDXRef-com.github.TeachMastermindPat--AfricaCryptoChainx-Project-Documentation-","name":"com.github.TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-","versionInfo":"","downloadLocation":"git+https://github.com/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-","licenseDeclared":"MIT","filesAnalyzed":false,"supplier":"NOASSERTION","externalRefs":[{"referenceCategory":"PACKAGE-MANAGER","referenceType":"purl","referenceLocator":"pkg:github/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-"}]}],"relationships":[]}
+
+### Suggested Free Tools and Bots for Development:
+1. **GitHub Actions** (Tool):
+   - **Purpose**: Automates workflows like testing, linting, and deployments.
+   - **Security**: Integrated within GitHub, so permissions are well-controlled. You can define workflows with specific access.
+   - **Link**: [GitHub Actions](https://github.com/features/actions)
+
+2. **Dependabot** (Bot):
+   - **Purpose**: Automatically checks for dependency updates and security vulnerabilities.
+   - **Security**: Dependabot runs with limited permissions and can be customized to notify you of changes, ensuring no automated merges happen without your approval.
+   - **Link**: [Dependabot](https://github.com/dependabot)
+
+3. **Snyk** (Tool):
+   - **Purpose**: Monitors and fixes security vulnerabilities in your project dependencies.
+   - **Security**: It offers limited free features and focuses on protecting your project from security issues without interfering with access control.
+   - **Link**: [Snyk](https://snyk.io/)
+
+4. **CodeQL** (Tool):
+   - **Purpose**: Performs automated code scanning to find potential vulnerabilities.
+   - **Security**: Integrated within GitHub’s security suite, allowing you to control how and when the tool scans your code.
+   - **Link**: [CodeQL](https://github.com/github/codeql)
+
+5. **Renovate Bot** (Bot):
+   - **Purpose**: Automates dependency updates by scanning for outdated packages.
+   - **Security**: Similar to Dependabot, Renovate provides control over which updates are made, ensuring manual approvals for changes.
+   - **Link**: [Renovate](https://github.com/renovatebot/renovate)
+
+6. **Prettier** (Tool):
+   - **Purpose**: Automatically formats your code to ensure consistency across the project.
+   - **Security**: It's a local tool that only modifies code formatting, ensuring no impact on project access control.
+   - **Link**: [Prettier](https://prettier.io/)
+
+### Updated SPDX File Example:
+```json
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2024-07-10T18:25:35Z",
+    "creators": [
+      "Tool: GitHub.com-Dependency-Graph",
+      "Tool: GitHub Actions",
+      "Bot: Dependabot",
+      "Tool: Snyk",
+      "Tool: CodeQL",
+      "Bot: Renovate"
+    ]
+  },
+  "name": "com.github.TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-",
+  "dataLicense": "CC0-1.0",
+  "documentDescribes": [
+    "SPDXRef-com.github.TeachMastermindPat--AfricaCryptoChainx-Project-Documentation-"
+  ],
+  "documentNamespace": "https://github.com/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-/dependency_graph/sbom-aa2a776d9f2c83ca",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-com.github.TeachMastermindPat--AfricaCryptoChainx-Project-Documentation-",
+      "name": "com.github.TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-",
+      "versionInfo": "",
+      "downloadLocation": "git+https://github.com/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-",
+      "licenseDeclared": "MIT",
+      "filesAnalyzed": false,
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:github/TeachMastermindPat/-AfricaCryptoChainx-Project-Documentation-"
+        }
+      ]
+    }
+  ],
+  "relationships": []
+}
+```
+
