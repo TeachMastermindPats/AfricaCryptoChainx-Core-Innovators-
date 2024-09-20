@@ -1,1 +1,41 @@
 2.317.0
+
+
+### **AfricaCryptoChainx Version 1.0 Release Notes**  
+
+**Release Date**: July 20, 2024  
+
+We are thrilled to announce the launch of **AfricaCryptoChainx Version 1.0**, which brings blockchain technology to the forefront of African markets with user-friendly features, robust security, and new tools to empower users.  
+
+#### **Key Features**:
+
+1. **Fiat Deposit and Transfer**:  
+   Seamlessly deposit and transfer funds between fiat and cryptocurrency using our secure and intuitive wallet. Users can deposit, send, and receive funds across multiple currencies with ease.  
+
+2. **Enhanced Security**:  
+   - Multi-factor authentication (MFA)  
+   - End-to-end encryption  
+   - Secure wallet integration for safe crypto and fiat transactions  
+
+3. **Free Tools**:  
+   - **Crypto Conversion Calculator**: Instantly convert between various cryptocurrencies and fiat currencies.  
+   - **Market Trend Tracker**: Stay informed with real-time crypto market trends and updates, integrated directly into the AfricaCryptoChainx platform.  
+   - **Educational Resources**: Access free blockchain and cryptocurrency learning materials to boost your understanding and make informed decisions.
+
+4. **Free Bot Integration**:  
+   - **24/7 Chatbot Assistance**: Get real-time support with our integrated bot for instant answers to common questions, transaction inquiries, and platform navigation.  
+   - **Market Alerts**: Receive automated notifications and updates about market movements and key events directly from the bot.  
+   - **Helpdesk and Tutorials**: The bot offers a guide to help users navigate the platform’s key features, from managing wallets to understanding deposits and withdrawals.
+
+5. **Fiat and Crypto-Friendly Wallet**:  
+   Our wallet supports both fiat and cryptocurrency transactions, providing flexibility and convenience for users across Africa.
+
+6. **Seamless User Interface**:  
+   A simplified, easy-to-use design that makes navigating blockchain technology straightforward, even for beginners.
+
+#### **Coming Soon**:  
+- Integration of DeFi features  
+- Expansion of P2P network capabilities  
+- More fiat currency options  
+
+
