@@ -249,7 +249,37 @@ USER runner
    - Simplified `RUNNER_ARCH` and `DOCKER_ARCH` selection using conditional statements.
    
 3. **Docker and Buildx**:
-   - Consolidated Docker and Buildx plugin download and installation into a single `RUN` statement.```markdown
+   - Consolidated Docker and Buildx plugin download and installation into a single `RUN` statement.
+
+### Free Development Tools:
+1. **GitHub**: Provides free repositories for open-source projects and tools for collaboration, issue tracking, and version control.
+   - **GitHub Actions**: Automate your workflow with GitHub Actions, allowing you to build, test, and deploy your code right from GitHub for free.
+   
+2. **Visual Studio Code**: A free code editor that supports various programming languages and has a rich extension ecosystem to enhance development productivity.
+   
+3. **Netlify**: For deploying web applications, Netlify offers free hosting with continuous integration and automatic deployment from Git repositories.
+
+4. **Trello**: Free project management tool that allows teams to organize tasks using boards, lists, and cards.
+
+5. **Figma**: Free design tool for creating UI/UX mockups collaboratively with your team.
+
+6. **Slack (Free Plan)**: While limited in the free version, it's still a great tool for team communication and integrations with other services.
+
+7. **Google Cloud (Free Tier)**: Offers free credits for a variety of cloud services, useful for deploying apps, storing data, and using AI/ML tools.
+
+8. **Postman**: A free tool for API development and testing, essential for blockchain-based and DeFi integrations.
+
+### Free Bots for Automation:
+1. **Zapier (Free Plan)**: Automate workflows between your apps without writing code. For example, automatically send a notification to Slack when a new transaction is recorded.
+
+2. **Discord Bots (e.g., MEE6, Carl-bot)**: Use bots in your Discord server to automate tasks like welcoming new members, moderating conversations, and sending notifications for key updates or stats from your project.
+
+3. **GitHub Bots (Probot)**: Automate GitHub workflows like merging pull requests or labeling issues based on certain triggers. Free and open-source.
+
+4. **IFTTT (Free Plan)**: Another powerful automation tool to connect various services together. For example, you could automate social media posts whenever you push a new update to GitHub.
+
+5. **UptimeRobot**: Free bot to monitor the status of your web applications or servers and notify you of downtime.
+```markdown
 # AfricaCryptoChainx
 
 ## Project Information: AfricaCryptoChainx
