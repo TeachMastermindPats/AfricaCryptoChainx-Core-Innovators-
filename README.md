@@ -1,4 +1,803 @@
-## Free Tools and Bots for AfricaCryptoChainx Development
+**Budget Allocation for AfricaCryptoChainx-ccxt-wallet**  
+*Overview of Financial Resources for Project Development, Security, and Integration*  
+**Licensed under MIT License**
+
+**Introduction**  
+The AfricaCryptoChainx-ccxt-wallet project is built under the MIT License, providing flexibility for developers to collaborate and innovate freely. This budget allocation outlines the financial distribution necessary to ensure the successful development, security, and integration of the wallet, with a primary focus on secure and scalable solutions tailored for the African market.
+
+**Budget Breakdown**
+
+1. **Project Development and Integration**  
+   **Total Allocation**: $50,000  
+   - **Software Development**: $20,000  
+     (Frontend/Backend development under MIT guidelines, API integration)
+   - **CCXT Integration**: $10,000  
+     (Integration of CCXT library for cryptocurrency exchange compatibility)
+   - **Fiat and Crypto Wallet Integration**: $15,000  
+     (Support for local currencies and crypto transactions with open-source tools)
+   - **Testing and QA**: $5,000  
+     (Thorough testing to ensure quality, security, and compliance)
+
+2. **Security and Compliance**  
+   **Total Allocation**: $30,000  
+   - **Encryption & Authentication Protocols**: $15,000  
+     (Implementation of encryption standards to secure transactions and user data)
+   - **Regulatory Compliance**: $10,000  
+     (Adherence to local financial regulations and blockchain policies)
+   - **Security Audits**: $5,000  
+     (Independent security audits to verify safety and compliance)
+
+3. **Infrastructure and Hosting**  
+   **Total Allocation**: $20,000  
+   - **Cloud Infrastructure**: $12,000  
+     (Scalable cloud hosting under cost-effective MIT-compatible environments)
+   - **Database Management**: $5,000  
+     (Optimized and secure database systems for user and transaction data)
+   - **Content Delivery Network (CDN)**: $3,000  
+     (Fast and reliable access across Africa through CDN integration)
+
+4. **Marketing and User Acquisition**  
+   **Total Allocation**: $15,000  
+   - **Social Media Campaigns**: $7,000  
+     (Targeted social media promotions across Africa)
+   - **Community Building**: $5,000  
+     (Building partnerships and communities through local events and forums)
+   - **Educational Content Creation**: $3,000  
+     (Creating blockchain and crypto wallet tutorials)
+
+5. **Operational Costs and Miscellaneous**  
+   **Total Allocation**: $10,000  
+   - **Team Salaries**: $5,000  
+   - **Tools & Licenses**: $2,500  
+     (Licenses for tools, while leveraging MIT-licensed open-source libraries)
+   - **Miscellaneous Costs**: $2,500  
+     (Unexpected project-related expenses)
+
+---
+
+**MIT License Notice**:  
+This project is licensed under the MIT License, granting users the ability to use, modify, and distribute the code for both personal and commercial purposes, with the only condition being that the original license is included with the project.
+
+**CI Configuration**:  
+For details on the CI configuration, please refer to the following link: [AfricaCryptoChainx CI Configuration](https://github.com/Africacryptochainx-Com/TeachMastermindPat-/blob/main/.github%2Fworkflows%2Fmain.%20%60%60%60yaml%20name%3A%20AfricaCryptoChainx.Com%20CI%20%20on%3A%20%5Bpush%2C%20pull_request%5D%20%20jobs%3A%20%20%20build%3A%20%20%20%20%20runs-on%3A%20ubuntu-latest%20%20%20%20%20%20steps%3A%20%20%20%20%20-%20name%3A%20Checkout%20code%20%20%20%20%20%20%20uses%3A%20actions%2Fcheckout%40v2%20%20%20%20%20%20-%20name%3A%20Set%20up%20Python%20%20%20%20%20%20%20uses%3A%20actions%2Fsetup-python%40v2%20%20%20%20%20%20%20with%3A%20%20%20%20%20%20%20%20%20python-version%3A%20%273.x%27%20%20%20%20%20%20-%20name%3A%20Install%20dependencies%20%20%20%20%20%20%20run%3A%20%7C%20%20%20%20%20%20%20%20%20python%20-m%20venv%20venv%20%20%20%20%20%20%20%20%20source%20venv%2Fbin%2Factivate%20%20%20%20%20%20%20%20%20pip%20install%20-r%20requirements.txt%20%20%20%20%20%20-%20name%3A%20Lint%20with%20flake8%20%20%20%20%20%20%20run%3A%20%7C%20%20%20%20%20%20%20%20%20source%20venv%2Fbin%2Factivate%20%20%20%20%20%20%20%20%20flake8%20.%20%20%20%20%20%20%20continue-on-error%3A%20true%20%20%20%20%20%20-%20name%3A%20Run%20tests%20%20%20%20%20%20%20run%3A%20%7C%20%20%20%20%20%20%20%20%20source%20venv%2F).
+
+This budget supports the development and integration of AfricaCryptoChainx-ccxt-wallet while fostering collaboration and innovation under the MIT license. By balancing development, security, and operational needs, the project aims to offer a powerful and accessible cryptocurrency wallet for Africa.
+https://github.com/Africacryptochainx-Com/TeachMastermindPat-/blob/main/.github%2Fworkflows%2Fmain.%20%60%60%60yaml%20name%3A%20AfricaCryptoChainx.Com%20CI%20%20on%3A%20%5Bpush%2C%20pull_request%5D%20%20jobs%3A%20%20%20build%3A%20%20%20%20%20runs-on%3A%20ubuntu-latest%20%20%20%20%20%20steps%3A%20%20%20%20%20-%20name%3A%20Checkout%20code%20%20%20%20%20%20%20uses%3A%20actions%2Fcheckout%40v2%20%20%20%20%20%20-%20name%3A%20Set%20up%20Python%20%20%20%20%20%20%20uses%3A%20actions%2Fsetup-python%40v2%20%20%20%20%20%20%20with%3A%20%20%20%20%20%20%20%20%20python-version%3A%20%273.x%27%20%20%20%20%20%20-%20name%3A%20Install%20dependencies%20%20%20%20%20%20%20run%3A%20%7C%20%20%20%20%20%20%20%20%20python%20-m%20venv%20venv%20%20%20%20%20%20%20%20%20source%20venv%2Fbin%2Factivate%20%20%20%20%20%20%20%20%20pip%20install%20-r%20requirements.txt%20%20%20%20%20%20-%20name%3A%20Lint%20with%20flake8%20%20%20%20%20%20%20run%3A%20%7C%20%20%20%20%20%20%20%20%20source%20venv%2Fbin%2Factivate%20%20%20%20%20%20%20%20%20flake8%20.%20%20%20%20%20%20%20continue-on-error%3A%20true%20%20%20%20%20%20-%20name%3A%20Run%20tests%20%20%20%20%20%20%20run%3A%20%7C%20%20%20%20%20%20%20%20%20source%20venv%2F%0A%0A**%22AfricaCryptoChainx_Free_Tools_and_Bots.md%22**%0A%0A## Free Tools and Bots for AfricaCryptoChainx Development
+
+As part of our mission to empower Africa with blockchain technology, **AfricaCryptoChainx** integrates various free tools and bots to streamline development, improve security, and foster community engagement. These resources enable us to build efficient, secure, and scalable DeFi solutions, while maintaining transparency and encouraging participation from all stakeholders.
+
+### Free Tools
+1. **Visual Studio Code** – A powerful and free code editor that supports multiple programming languages. This helps developers within the AfricaCryptoChainx ecosystem to collaborate more effectively and ensure smooth code integration.
+2. **GitHub Actions** – Automates key workflows, including continuous integration (CI) and continuous deployment (CD), directly in our GitHub repositories. This ensures that **AfricaCryptoChainx** stays updated with the latest code, improving project security and performance.
+3. **Postman** – Used for testing and developing APIs that enable seamless integration with local P2P networks and fiat deposit functionality, ensuring a robust backend for AfricaCryptoChainx.
+4. **Trello** – For tracking development tasks, milestones, and project management, making sure that we meet deadlines like the **July 20, 2024 launch**.
+5. **Figma** – Essential for UI/UX design collaboration, helping design the interface that supports smooth transactions, user education, and financial inclusion.
+
+### Free Bots
+1. **Dependabot** (GitHub) – Automatically monitors dependencies in the AfricaCryptoChainx repository, ensuring they are up-to-date and free from vulnerabilities, aligning with our goal of maintaining **robust security integration**.
+2. **MEE6** (Discord) – Engages and moderates the AfricaCryptoChainx community, welcoming new members and maintaining a positive environment, consistent with our **community standards**.
+3. **Zapier** – Automates routine tasks across apps like Slack, Trello, and Google Sheets, ensuring smooth communication between the AfricaCryptoChainx team and financial contributors.
+4. **Slackbot** (Slack) – Within our Slack workspace, this bot provides automated reminders for important project milestones, funding updates, and progress reports, helping with task management and ensuring transparency.
+5. **GitHub Bots** – Tools like `welcome-bot` automatically greet new contributors to the AfricaCryptoChainx project, helping with onboarding and directing them to relevant resources like our **security policy** and **best practices guide**.
+
+By incorporating these free tools and bots, **AfricaCryptoChainx** can continue building secure blockchain solutions for Africa, while managing resources efficiently. These tools ensure we maintain productivity, enhance security, and create an inclusive environment as we work toward achieving financial inclusion and community-driven growth in the region.**Description**: A wallet for AfricaCryptoChainx integrating CCXT for cryptocurrency exchange functionalities.
+
+## Features
+- **Secure Wallet Management**: Handle AfricaCryptoChainx (ACCX) coins with enhanced security.
+- **CCXT Integration**: Seamlessly interact with various cryptocurrency exchanges.
+- **Transaction Support**: Execute trades, check balances, and manage coins securely.# Tasks
+- **Documentation**: Create user and developer guides.
+- **Beta Testing**: Gather feedback.
+- **Marketing**: Prepare materials.
+- **Access Control**: Implement mechanisms for full access control over the project account and project resources.
+- **Cryptocurrency Integration**: Integrate support for a variety of coins, including:
+  - Bitcoin (BTC)
+  - Ethereum (ETH)
+  - Binance Coin (BNB)
+  - Stablecoins (USDT, USDC, DAI)
+  - Cardano (ADA)
+  - Solana (SOL)
+  - Polkadot (DOT)
+  - Chainlink (LINK)
+  - Litecoin (LTC)
+  - African-based coins (e.g., Akoin)
+  - BakeryToken (BAKE)
+  - My Neighbour Alice (ALICE)
+
+```markdown
+### Cryptocurrency Integration
+AfricaCryptoChainx aims to introduce its own native coins alongside established cryptocurrencies to support financial inclusion and DeFi functionalities in Africa. Potential coin names include:
+
+- AfricaCryptoChainx Coin (ACC)
+- Africoin (AFR)
+- AfroToken (AFT)
+- Sahara Coin (SHC)
+- Savanna Token (SAV)
+- Zambezi Coin (ZBC)
+- Kilimanjaro Token (KMT)
+- Ubuntu Coin (UBC)
+- Serengeti Token (SGT)
+- CapeCoin (CPC)
+- Victoria Coin (VIC)
+- Nile Token (NLT)
+- Kalahari Coin (KHC)
+- Rift Token (RFT)
+- Baobab Coin (BBC)
+- Acacia Token (ACT)
+- Congo Coin (CGC)
+- Atlas Token (ATS)
+- Oasis Coin (OSC)
+- Horizon Token (HRT)
+- Eden Coin (EDC)
+- Gateway Token (GAT)
+- Unity Coin (UTC)
+- Harmony Token (HMT)
+- Heritage Coin (HTC)
+- Liberty Token (LBT)
+- Pride Coin (PDC)
+- Essence Token (EST)
+- Destiny Coin (DSC)
+- Pulse Token (PLT)
+- Eclipse Coin (ECC)
+- Legacy Token (LGC)
+- Fortune Coin (FRC)
+- Prosperity Token (PRT)
+- Wisdom Coin (WSC)
+- Vision Token (VST)
+- Legacy Coin (LGC)
+- Genesis Token (GST)
+- Spirit Coin (SPC)
+- Sovereign Token (SOV)
+- Summit Coin (SMT)
+- Citadel Token (CTT)
+- Foundation Coin (FDT)
+- Legacy Token (LGC)
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)https://opencollective.com/teachmastermindpat## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ccxt/ccxt,Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&type=Timeline)](https://star-history.com/#ccxt/ccxt&Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation.git&Timeline)https://x.com/Cryptorollermin?t=LqCli7-WGitXJQsRrDwLDw&s=09https://github.com/Africacryptochainx-Com/AfricaCryptoChainx_Project_Documentation```Dockerfile
+# Source: https://github.com/dotnet/dotnet-docker
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy as build
+
+ARG TARGETOS
+ARG TARGETARCH
+ARG RUNNER_VERSION
+ARG RUNNER_CONTAINER_HOOKS_VERSION=0.6.0
+ARG DOCKER_VERSION=25.0.4
+ARG BUILDX_VERSION=0.13.1
+
+# Combine apt update and install to reduce layers
+RUN apt update -y && apt install -y curl unzip && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /actions-runner
+
+# Download and extract GitHub Actions Runner based on architecture
+RUN export RUNNER_ARCH=${TARGETARCH} \
+    && [ "$RUNNER_ARCH" = "amd64" ] && RUNNER_ARCH=x64 \
+    || true \
+    && curl -f -L -o runner.tar.gz https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-${TARGETOS}-${RUNNER_ARCH}-${RUNNER_VERSION}.tar.gz \
+    && tar xzf runner.tar.gz \
+    && rm runner.tar.gz
+
+# Download and extract GitHub Actions Container Hooks
+RUN curl -f -L -o runner-container-hooks.zip https://github.com/actions/runner-container-hooks/releases/download/v${RUNNER_CONTAINER_HOOKS_VERSION}/actions-runner-hooks-k8s-${RUNNER_CONTAINER_HOOKS_VERSION}.zip \
+    && unzip runner-container-hooks.zip -d ./k8s \
+    && rm runner-container-hooks.zip
+
+# Download Docker and Buildx plugin based on architecture
+RUN export DOCKER_ARCH=${TARGETARCH} \
+    && [ "$DOCKER_ARCH" = "amd64" ] && DOCKER_ARCH=x86_64 \
+    || [ "$DOCKER_ARCH" = "arm64" ] && DOCKER_ARCH=aarch64 \
+    && curl -fLo docker.tgz https://download.docker.com/${TARGETOS}/static/stable/${DOCKER_ARCH}/docker-${DOCKER_VERSION}.tgz \
+    && tar zxvf docker.tgz \
+    && rm docker.tgz \
+    && mkdir -p /usr/local/lib/docker/cli-plugins \
+    && curl -fLo /usr/local/lib/docker/cli-plugins/docker-buildx "https://github.com/docker/buildx/releases/download/v${BUILDX_VERSION}/buildx-v${BUILDX_VERSION}.linux-${TARGETARCH}" \
+    && chmod +x /usr/local/lib/docker/cli-plugins/docker-buildx
+
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV RUNNER_MANUALLY_TRAP_SIG=1
+ENV ACTIONS_RUNNER_PRINT_LOG_TO_STDOUT=1
+ENV ImageOS=ubuntu22
+
+# Install necessary dependencies for Git and add the Git PPA
+RUN apt update -y \
+    && apt install -y --no-install-recommends sudo lsb-release gpg-agent software-properties-common \
+    && add-apt-repository ppa:git-core/ppa \
+    && apt update -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# Add a non-root user and configure sudo permissions
+RUN adduser --disabled-password --gecos "" --uid 1001 runner \
+    && groupadd docker --gid 123 \
+    && usermod -aG sudo runner \
+    && usermod -aG docker runner \
+    && echo "%sudo   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers \
+    && echo "Defaults env_keep += \"DEBIAN_FRONTEND\"" >> /etc/sudoers
+
+WORKDIR /home/runner
+
+# Copy the runner and docker components from the build stage
+COPY --chown=runner:docker --from=build /actions-runner .
+COPY --from=build /usr/local/lib/docker/cli-plugins/docker-buildx /usr/local/lib/docker/cli-plugins/docker-buildx
+
+# Install Docker binaries and clean up unnecessary files
+RUN install -o root -g root -m 755 docker/* /usr/bin/ && rm -rf docker
+
+# Switch to the non-root user for running the container
+USER runner
+```
+
+### Changes Made:
+1. **Layer Efficiency**:
+   - Combined multiple `RUN` commands where possible to reduce the number of layers in the final image.
+   - Cleaned up the `apt` lists after installation to minimize the image size.
+   
+2. **Logical Flow**:
+   - Simplified `RUNNER_ARCH` and `DOCKER_ARCH` selection using conditional statements.
+   
+3. **Docker and Buildx**:
+   - Consolidated Docker and Buildx plugin download and installation into a single `RUN` statement.
+These native coins will facilitate secure and accessible financial services tailored for African communities, promoting economic empowerment and sustainable development.
+
+### Trading and Exchange
+The native coins developed by AfricaCryptoChainx, including ACC, AFR, AFT, and others, will be listed on cryptocurrency exchanges. This allows users to buy, sell, and trade these coins alongside established cryptocurrencies such as Bitcoin (BTC), Ethereum (ETH), Binance Coin (BNB), Stablecoins (USDT, USDC, DAI), Cardano (ADA), Solana (SOL), Polkadot (DOT), Chainlink (LINK), Litecoin (LTC), and African-based coins like Akoin, BakeryToken (BAKE), and My Neighbour Alice (ALICE). Users can participate in the market value of these coins through various trading pairs offered by exchanges.
+``````Dockerfile
+# Source: https://github.com/dotnet/dotnet-docker
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy as build
+
+ARG TARGETOS
+ARG TARGETARCH
+ARG RUNNER_VERSION
+ARG RUNNER_CONTAINER_HOOKS_VERSION=0.6.0
+ARG DOCKER_VERSION=25.0.4
+ARG BUILDX_VERSION=0.13.1
+
+# Combine apt update and install to reduce layers
+RUN apt update -y && apt install -y curl unzip && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /actions-runner
+
+# Download and extract GitHub Actions Runner based on architecture
+RUN export RUNNER_ARCH=${TARGETARCH} \
+    && [ "$RUNNER_ARCH" = "amd64" ] && RUNNER_ARCH=x64 \
+    || true \
+    && curl -f -L -o runner.tar.gz https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-${TARGETOS}-${RUNNER_ARCH}-${RUNNER_VERSION}.tar.gz \
+    && tar xzf runner.tar.gz \
+    && rm runner.tar.gz
+
+# Download and extract GitHub Actions Container Hooks
+RUN curl -f -L -o runner-container-hooks.zip https://github.com/actions/runner-container-hooks/releases/download/v${RUNNER_CONTAINER_HOOKS_VERSION}/actions-runner-hooks-k8s-${RUNNER_CONTAINER_HOOKS_VERSION}.zip \
+    && unzip runner-container-hooks.zip -d ./k8s \
+    && rm runner-container-hooks.zip
+
+# Download Docker and Buildx plugin based on architecture
+RUN export DOCKER_ARCH=${TARGETARCH} \
+    && [ "$DOCKER_ARCH" = "amd64" ] && DOCKER_ARCH=x86_64 \
+    || [ "$DOCKER_ARCH" = "arm64" ] && DOCKER_ARCH=aarch64 \
+    && curl -fLo docker.tgz https://download.docker.com/${TARGETOS}/static/stable/${DOCKER_ARCH}/docker-${DOCKER_VERSION}.tgz \
+    && tar zxvf docker.tgz \
+    && rm docker.tgz \
+    && mkdir -p /usr/local/lib/docker/cli-plugins \
+    && curl -fLo /usr/local/lib/docker/cli-plugins/docker-buildx "https://github.com/docker/buildx/releases/download/v${BUILDX_VERSION}/buildx-v${BUILDX_VERSION}.linux-${TARGETARCH}" \
+    && chmod +x /usr/local/lib/docker/cli-plugins/docker-buildx
+
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV RUNNER_MANUALLY_TRAP_SIG=1
+ENV ACTIONS_RUNNER_PRINT_LOG_TO_STDOUT=1
+ENV ImageOS=ubuntu22
+
+# Install necessary dependencies for Git and add the Git PPA
+RUN apt update -y \
+    && apt install -y --no-install-recommends sudo lsb-release gpg-agent software-properties-common \
+    && add-apt-repository ppa:git-core/ppa \
+    && apt update -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# Add a non-root user and configure sudo permissions
+RUN adduser --disabled-password --gecos "" --uid 1001 runner \
+    && groupadd docker --gid 123 \
+    && usermod -aG sudo runner \
+    && usermod -aG docker runner \
+    && echo "%sudo   ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers \
+    && echo "Defaults env_keep += \"DEBIAN_FRONTEND\"" >> /etc/sudoers
+
+WORKDIR /home/runner
+
+# Copy the runner and docker components from the build stage
+COPY --chown=runner:docker --from=build /actions-runner .
+COPY --from=build /usr/local/lib/docker/cli-plugins/docker-buildx /usr/local/lib/docker/cli-plugins/docker-buildx
+
+# Install Docker binaries and clean up unnecessary files
+RUN install -o root -g root -m 755 docker/* /usr/bin/ && rm -rf docker
+
+# Switch to the non-root user for running the container
+USER runner
+```
+
+### Changes Made:
+1. **Layer Efficiency**:
+   - Combined multiple `RUN` commands where possible to reduce the number of layers in the final image.
+   - Cleaned up the `apt` lists after installation to minimize the image size.
+   
+2. **Logical Flow**:
+   - Simplified `RUNNER_ARCH` and `DOCKER_ARCH` selection using conditional statements.
+   
+3. **Docker and Buildx**:
+   - Consolidated Docker and Buildx plugin download and installation into a single `RUN` statement.```markdown
+# AfricaCryptoChainx
+
+## Project Information: AfricaCryptoChainx
+
+### Badges
+- [![GitHub license](https://img.shields.io/github/license/AfricaCryptoChainx)](Skip to content
+Navigation Menu
+
+Code
+Issues
+831
+A JavaScript / TypeScript / Python / C# / PHP cryptocurrency trading API with support for more than 100 bitcoin/altcoin exchanges
+
+docs.ccxt.com
+License
+ MIT license
+ 32.6k stars
+ 7.5k forks
+ 934 watching
+Branches
+Tags
+ Activity
+ Custom properties
+Public repository
+ccxt/ccxt
+Folders and files
+Name	
+Latest commit
+author
+Travis CI
+3 hours ago
+History
+.git-templates/hooks
+10 months ago
+.github
+last year
+build
+6 hours ago
+cs
+3 hours ago
+dist
+3 hours ago
+doc
+6 months ago
+examples
+5 days ago
+js
+3 hours ago
+php
+3 hours ago
+python
+3 hours ago
+Repository files navigation
+README
+MIT license
+CCXT – CryptoCurrency eXchange Trading Library
+Build Status npm PyPI NPM Downloads Discord Supported Exchanges Twitter Follow
+
+A JavaScript / Python / PHP / C# library for cryptocurrency trading and e-commerce with support for many bitcoin/ether/altcoin exchange markets and merchant APIs.
+
+Install · Usage · Manual · FAQ · Examples · Contributing · Social
+The CCXT library is used to connect and trade with cryptocurrency exchanges and payment processing services worldwide. It provides quick access to market data for storage, analysis, visualization, indicator development, algorithmic trading, strategy backtesting, bot programming, and related software engineering.
+
+It is intended to be used by coders, developers, technically-skilled traders, data-scientists and financial analysts for building trading algorithms.
+
+Current feature list:
+
+support for many cryptocurrency exchanges — more coming soon
+fully implemented public and private APIs
+optional normalized data for cross-exchange analytics and arbitrage
+an out of the box unified API that is extremely easy to integrate
+works in Node 10.4+, Python 3, PHP 8.1+, netstandard2.0/2.1 and web browsers
+Sponsored Promotion
+bitmart-campaign
+
+See Also
+TabTrader TabTrader – trading on all exchanges in one app. Available on Android and iOS!
+Freqtrade Freqtrade – leading opensource cryptocurrency algorithmic trading software!
+OctoBot OctoBot – cryptocurrency trading bot with an advanced web interface.
+TokenBot TokenBot – discover and copy the best algorithmic traders in the world.
+Certified Cryptocurrency Exchanges
+logo	id	name	ver	type	certified	pro	discount
+binance	binance	Binance	API Version *	cex	CCXT Certified	CCXT Pro	Sign up with Binance using CCXT's referral link for a 10% discount!
+binancecoinm	binancecoinm	Binance COIN-M	API Version *	cex	CCXT Certified	CCXT Pro	Sign up with Binance COIN-M using CCXT's referral link for a 10% discount!
+binanceusdm	binanceusdm	Binance USDⓈ-M	API Version *	cex	CCXT Certified	CCXT Pro	Sign up with Binance USDⓈ-M using CCXT's referral link for a 10% discount!
+bingx	bingx	BingX	API Version 1	cex	CCXT Certified	CCXT Pro	
+bitget	bitget	Bitget	API Version 2	cex	CCXT Certified	CCXT Pro	
+bitmart	bitmart	BitMart	API Version 2	cex	CCXT Certified	CCXT Pro	Sign up with BitMart using CCXT's referral link for a 30% discount!
+bitmex	bitmex	BitMEX	API Version 1	cex	CCXT Certified	CCXT Pro	Sign up with BitMEX using CCXT's referral link for a 10% discount!
+bybit	bybit	Bybit	API Version 5	cex	CCXT Certified	CCXT Pro	
+coinbase	coinbase	Coinbase Advanced	API Version 2	cex	CCXT Certified	CCXT Pro	
+coinbaseinternational	coinbaseinternational	Coinbase International	API Version 1	cex	CCXT Certified	CCXT Pro	
+coinex	coinex	CoinEx	API Version 2	cex	CCXT Certified	CCXT Pro	
+cryptocom	cryptocom	Crypto.com	API Version 2	cex	CCXT Certified	CCXT Pro	Sign up with Crypto.com using CCXT's referral link for a 75% discount!
+gate	gate	Gate.io	API Version 4	cex	CCXT Certified	CCXT Pro	Sign up with Gate.io using CCXT's referral link for a 20% discount!
+hashkey	hashkey	HashKey Global	API Version 1	cex	CCXT Certified	CCXT Pro	
+htx	htx	HTX	API Version 1	cex	CCXT Certified	CCXT Pro	Sign up with HTX using CCXT's referral link for a 15% discount!
+kucoin	kucoin	KuCoin	API Version 2	cex	CCXT Certified	CCXT Pro	
+kucoinfutures	kucoinfutures	KuCoin Futures	API Version 1	cex	CCXT Certified	CCXT Pro	
+mexc	mexc	MEXC Global	API Version 3	cex	CCXT Certified	CCXT Pro	
+okx	okx	OKX	API Version 5	cex	CCXT Certified	CCXT Pro	Sign up with OKX using CCXT's referral link for a 20% discount!
+woo	woo	WOO X	API Version 1	cex	CCXT Certified	CCXT Pro	Sign up with WOO X using CCXT's referral link for a 35% discount!
+woofipro	woofipro	WOOFI PRO	API Version 1	dex	CCXT Certified	CCXT Pro	Sign up with WOOFI PRO using CCXT's referral link for a 5% discount!
+Supported Cryptocurrency Exchanges
+The CCXT library currently supports the following 103 cryptocurrency exchange markets and trading APIs:
+
+logo	id	name	ver	type	certified	pro
+ace	ace	ACE	API Version 2	cex		
+alpaca	alpaca	Alpaca	API Version *	cex		CCXT Pro
+ascendex	ascendex	AscendEX	API Version 2	cex		CCXT Pro
+bequant	bequant	Bequant	API Version 3	cex		CCXT Pro
+bigone	bigone	BigONE	API Version 3	cex		
+binance	binance	Binance	API Version *	cex	CCXT Certified	CCXT Pro
+binancecoinm	binancecoinm	Binance COIN-M	API Version *	cex	CCXT Certified	CCXT Pro
+binanceus	binanceus	Binance US	API Version *	cex		CCXT Pro
+binanceusdm	binanceusdm	Binance USDⓈ-M	API Version *	cex	CCXT Certified	CCXT Pro
+bingx	bingx	BingX	API Version 1	cex	CCXT Certified	CCXT Pro
+bit2c	bit2c	Bit2C	API Version *	cex		
+bitbank	bitbank	bitbank	API Version 1	cex		
+bitbns	bitbns	Bitbns	API Version 2	cex		
+bitfinex	bitfinex	Bitfinex	API Version 1	cex		CCXT Pro
+bitfinex2	bitfinex2	Bitfinex	API Version 2	cex		CCXT Pro
+bitflyer	bitflyer	bitFlyer	API Version 1	cex		
+bitget	bitget	Bitget	API Version 2	cex	CCXT Certified	CCXT Pro
+bithumb	bithumb	Bithumb	API Version *	cex		CCXT Pro
+bitmart	bitmart	BitMart	API Version 2	cex	CCXT Certified	CCXT Pro
+bitmex	bitmex	BitMEX	API Version 1	cex	CCXT Certified	CCXT Pro
+bitopro	bitopro	BitoPro	API Version 3	cex		CCXT Pro
+bitrue	bitrue	Bitrue	API Version 1	cex		CCXT Pro
+bitso	bitso	Bitso	API Version 3	cex		
+bitstamp	bitstamp	Bitstamp	API Version 2	cex		CCXT Pro
+bitteam	bitteam	BIT.TEAM	API Version 2.0.6	cex		
+bitvavo	bitvavo	Bitvavo	API Version 2	cex		CCXT Pro
+bl3p	bl3p	BL3P	API Version 1	cex		
+blockchaincom	blockchaincom	Blockchain.com	API Version 3	cex		CCXT Pro
+blofin	blofin	BloFin	API Version 1	cex		CCXT Pro
+btcalpha	btcalpha	BTC-Alpha	API Version 1	cex		
+btcbox	btcbox	BtcBox	API Version 1	cex		
+btcmarkets	btcmarkets	BTC Markets	API Version 3	cex		
+btcturk	btcturk	BTCTurk	API Version *	cex		
+bybit	bybit	Bybit	API Version 5	cex	CCXT Certified	CCXT Pro
+cex	cex	CEX.IO	API Version *	cex		CCXT Pro
+coinbase	coinbase	Coinbase Advanced	API Version 2	cex	CCXT Certified	CCXT Pro
+coinbaseexchange	coinbaseexchange	Coinbase Exchange	API Version *	cex		CCXT Pro
+coinbaseinternational	coinbaseinternational	Coinbase International	API Version 1	cex	CCXT Certified	CCXT Pro
+coincheck	coincheck	coincheck	API Version *	cex		
+coinex	coinex	CoinEx	API Version 2	cex	CCXT Certified	CCXT Pro
+coinlist	coinlist	Coinlist	API Version 1	cex		
+coinmate	coinmate	CoinMate	API Version *	cex		
+coinmetro	coinmetro	Coinmetro	API Version 1	cex		
+coinone	coinone	CoinOne	API Version 2	cex		
+coinsph	coinsph	Coins.ph	API Version 1	cex		
+coinspot	coinspot	CoinSpot	API Version *	cex		
+cryptocom	cryptocom	Crypto.com	API Version 2	cex	CCXT Certified	CCXT Pro
+currencycom	currencycom	Currency.com	API Version 2	cex		CCXT Pro
+delta	delta	Delta Exchange	API Version 2	cex		
+deribit	deribit	Deribit	API Version 2	cex		CCXT Pro
+digifinex	digifinex	DigiFinex	API Version 3	cex		
+exmo	exmo	EXMO	API Version 1.1	cex		
+fmfwio	fmfwio	FMFW.io	API Version 3	cex		
+gate	gate	Gate.io	API Version 4	cex	CCXT Certified	CCXT Pro
+gemini	gemini	Gemini	API Version 1	cex		CCXT Pro
+hashkey	hashkey	HashKey Global	API Version 1	cex	CCXT Certified	CCXT Pro
+hitbtc	hitbtc	HitBTC	API Version 3	cex		
+hollaex	hollaex	HollaEx	API Version 2	cex		CCXT Pro
+htx	htx	HTX	API Version 1	cex	CCXT Certified	CCXT Pro
+huobijp	huobijp	Huobi Japan	API Version 1	cex		CCXT Pro
+hyperliquid	hyperliquid	Hyperliquid	API Version 1	dex		CCXT Pro
+idex	idex	IDEX	API Version 3	dex		CCXT Pro
+independentreserve	independentreserve	Independent Reserve	API Version *	cex		CCXT Pro
+indodax	indodax	INDODAX	API Version 2.0	cex		
+kraken	kraken	Kraken	API Version 0	cex		CCXT Pro
+krakenfutures	krakenfutures	Kraken Futures	API Version 3	cex		CCXT Pro
+kucoin	kucoin	KuCoin	API Version 2	cex	CCXT Certified	CCXT Pro
+kucoinfutures	kucoinfutures	KuCoin Futures	API Version 1	cex	CCXT Certified	CCXT Pro
+kuna	kuna	Kuna	API Version 4	cex		
+latoken	latoken	Latoken	API Version 2	cex		
+lbank	lbank	LBank	API Version 2	cex		CCXT Pro
+luno	luno	luno	API Version 1	cex		CCXT Pro
+lykke	lykke	Lykke	API Version 2	cex		
+mercado	mercado	Mercado Bitcoin	API Version 3	cex		
+mexc	mexc	MEXC Global	API Version 3	cex	CCXT Certified	CCXT Pro
+ndax	ndax	NDAX	API Version *	cex		CCXT Pro
+novadax	novadax	NovaDAX	API Version 1	cex		
+oceanex	oceanex	OceanEx	API Version 1	cex		
+okcoin	okcoin	OKCoin	API Version 5	cex		CCXT Pro
+okx	okx	OKX	API Version 5	cex	CCXT Certified	CCXT Pro
+onetrading	onetrading	One Trading	API Version 1	cex		CCXT Pro
+oxfun	oxfun	OXFUN	API Version 3	cex		CCXT Pro
+p2b	p2b	p2b	API Version 2	cex		CCXT Pro
+paradex	paradex	Paradex	API Version 1	dex		CCXT Pro
+paymium	paymium	Paymium	API Version 1	cex		
+phemex	phemex	Phemex	API Version 1	cex		CCXT Pro
+poloniex	poloniex	Poloniex	API Version *	cex		CCXT Pro
+poloniexfutures	poloniexfutures	Poloniex Futures	API Version 1	cex		CCXT Pro
+probit	probit	ProBit	API Version 1	cex		CCXT Pro
+timex	timex	TimeX	API Version 1	cex		
+tokocrypto	tokocrypto	Tokocrypto	API Version 1	cex		
+tradeogre	tradeogre	tradeogre	API Version 2	cex		
+upbit	upbit	Upbit	API Version 1	cex		CCXT Pro
+vertex	vertex	Vertex	API Version 1	dex		CCXT Pro
+wavesexchange	wavesexchange	Waves.Exchange	API Version *	dex		
+wazirx	wazirx	WazirX	API Version 2	cex		CCXT Pro
+whitebit	whitebit	WhiteBit	API Version 4	cex		CCXT Pro
+woo	woo	WOO X	API Version 1	cex	CCXT Certified	CCXT Pro
+woofipro	woofipro	WOOFI PRO	API Version 1	dex	CCXT Certified	CCXT Pro
+xt	xt	XT	API Version 4	cex		CCXT Pro
+yobit	yobit	YoBit	API Version 3	cex		
+zaif	zaif	Zaif	API Version 1	cex		
+zonda	zonda	Zonda	API Version *	cex		
+The list above is updated frequently, new crypto markets, exchanges, bug fixes, and API endpoints are introduced on a regular basis. See the Manual for more details. If you can't find a cryptocurrency exchange in the list above and want it to be added, post a link to it by opening an issue here on GitHub or send us an email.
+
+The library is under MIT license, that means it's absolutely free for any developer to build commercial and opensource software on top of it, but use it at your own risk with no warranties, as is.
+
+Install
+The easiest way to install the CCXT library is to use a package manager:
+
+ccxt in NPM (JavaScript / Node v7.6+)
+ccxt in PyPI (Python 3.7.0+)
+ccxt in Packagist/Composer (PHP 7.0+)
+ccxt in Nuget (netstandard 2.0)
+This library is shipped as an all-in-one module implementation with minimalistic dependencies and requirements:
+
+js/ in JavaScript
+python/ in Python (generated from JS)
+php/ in PHP (generated from JS)
+You can also clone it into your project directory from ccxt GitHub repository:
+
+git clone https://github.com/ccxt/ccxt.git  # including 1GB of commit history
+
+# or
+
+git clone https://github.com/ccxt/ccxt.git --depth 1  # avoid downloading 1GB of commit history
+JavaScript (NPM)
+JavaScript version of CCXT works in both Node and web browsers. Requires ES6 and async/await syntax support (Node 7.6.0+). When compiling with Webpack and Babel, make sure it is not excluded in your babel-loader config.
+
+ccxt in NPM
+
+npm install ccxt
+//cjs
+var ccxt = require ('ccxt')
+console.log (ccxt.exchanges) // print all available exchanges
+//esm
+import {version, exchanges} from 'ccxt';
+console.log(version, Object.keys(exchanges));
+JavaScript (for use with the <script> tag):
+All-in-one browser bundle (dependencies included), served from a CDN of your choice:
+
+jsDelivr: https://cdn.jsdelivr.net/npm/ccxt@4.4.9/dist/ccxt.browser.min.js
+unpkg: https://unpkg.com/ccxt@4.4.9/dist/ccxt.browser.min.js
+CDNs are not updated in real-time and may have delays. Defaulting to the most recent version without specifying the version number is not recommended. Please, keep in mind that we are not responsible for the correct operation of those CDN servers.
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ccxt@4.4.9/dist/ccxt.browser.min.js"></script>
+Creates a global ccxt object:
+
+console.log (ccxt.exchanges) // print all available exchanges
+Python
+ccxt in PyPI
+
+pip install ccxt
+import ccxt
+print(ccxt.exchanges) # print a list of all available exchange classes
+The library supports concurrent asynchronous mode with asyncio and async/await in Python 3.7.0+
+
+import ccxt.async_support as ccxt # link against the asynchronous version of ccxt
+PHP
+ccxt in PHP with Packagist/Composer (PHP 7.0+)
+
+It requires common PHP modules:
+
+cURL
+mbstring (using UTF-8 is highly recommended)
+PCRE
+iconv
+gmp (this is a built-in extension as of PHP 7.2+)
+include "ccxt.php";
+var_dump (\ccxt\Exchange::$exchanges); // print a list of all available exchange classes
+The library supports concurrent asynchronous mode using tools from RecoilPHP and ReactPHP in PHP 7.1+. Read the Manual for more details.
+
+.net/C#
+ccxt in C# with Nuget (netstandard 2.0 and netstandard 2.1)
+
+using ccxt;
+Console.WriteLine(ccxt.Exchanges) // check this later
+Docker
+You can get CCXT installed in a container along with all the supported languages and dependencies. This may be useful if you want to contribute to CCXT (e.g. run the build scripts and tests — please see the Contributing document for the details on that).
+
+Using docker-compose (in the cloned CCXT repository):
+
+docker-compose run --rm ccxt
+You don't need the Docker image if you're not going to develop CCXT. If you just want to use CCXT – just install it as a regular package into your project.
+
+Documentation
+Read the Manual for more details.
+
+Usage
+Intro
+The CCXT library consists of a public part and a private part. Anyone can use the public part immediately after installation. Public APIs provide unrestricted access to public information for all exchange markets without the need to register a user account or have an API key.
+
+Public APIs include the following:
+
+market data
+instruments/trading pairs
+price feeds (exchange rates)
+order books
+trade history
+tickers
+OHLC(V) for charting
+other public endpoints
+In order to trade with private APIs you need to obtain API keys from an exchange's website. It usually means signing up to the exchange and creating API keys for your account. Some exchanges require personal info or identification. Sometimes verification may be necessary as well. In this case you will need to register yourself, this library will not create accounts or API keys for you. Some exchanges expose API endpoints for registering an account, but most exchanges don't. You will have to sign up and create API keys on their websites.
+
+Private APIs allow the following:
+
+manage personal account info
+query account balances
+trade by making market and limit orders
+deposit and withdraw fiat and crypto funds
+query personal orders
+get ledger history
+transfer funds between accounts
+use merchant services
+This library implements full public and private REST and WebSocket APIs for all exchanges in TypeScript, JavaScript, PHP and Python.
+
+The CCXT library supports both camelcase notation (preferred in TypeScript and JavaScript) and underscore notation (preferred in Python and PHP), therefore all methods can be called in either notation or coding style in any language.
+
+// both of these notations work in JavaScript/Python/PHP
+exchange.methodName ()  // camelcase pseudocode
+exchange.method_name () // underscore pseudocode
+Read the Manual for more details.
+
+JavaScript
+CCXT now supports ESM and CJS modules
+
+CJS
+// cjs example
+'use strict';
+const ccxt = require ('ccxt');
+
+(async function () {
+    let kraken    = new ccxt.kraken ()
+    let bitfinex  = new ccxt.bitfinex ({ verbose: true })
+    let huobipro  = new ccxt.huobipro ()
+    let okcoinusd = new ccxt.okcoin ({
+        apiKey: 'YOUR_PUBLIC_API_KEY',
+        secret: 'YOUR_SECRET_PRIVATE_KEY',
+    })
+
+    const exchangeId = 'binance'
+        , exchangeClass = ccxt[exchangeId]
+        , exchange = new exchangeClass ({
+            'apiKey': 'YOUR_API_KEY',
+            'secret': 'YOUR_SECRET',
+        })
+
+    console.log (kraken.id,    await kraken.loadMarkets ())
+    console.log (bitfinex.id,  await bitfinex.loadMarkets  ())
+    console.log (huobipro.id,  await huobipro.loadMarkets ())
+
+    console.log (kraken.id,    await kraken.fetchOrderBook (kraken.symbols[0]))
+    console.log (bitfinex.id,  await bitfinex.fetchTicker ('BTC/USD'))
+    console.log (huobipro.id,  await huobipro.fetchTrades ('ETH/USDT'))
+
+    console.log (okcoinusd.id, await okcoinusd.fetchBalance ())
+
+    // sell 1 BTC/USD for market price, sell a bitcoin for dollars immediately
+    console.log (okcoinusd.id, await okcoinusd.createMarketSellOrder ('BTC/USD', 1))
+
+    // buy 1 BTC/USD for $2500, you pay $2500 and receive ฿1 when the order is closed
+    console.log (okcoinusd.id, await okcoinusd.createLimitBuyOrder ('BTC/USD', 1, 2500.00))
+
+    // pass/redefine custom exchange-specific order params: type, amount, price or whatever
+    // use a custom order type
+    bitfinex.createLimitSellOrder ('BTC/USD', 1, 10, { 'type': 'trailing-stop' })
+
+}) ();
+ESM
+//esm example
+import {version, binance} from 'ccxt';
+
+console.log(version);
+const exchange = new binance();
+const ticker = await exchange.fetchTicker('BTC/USDT');
+console.log(ticker);
+Python
+# coding=utf-8
+
+import ccxt
+
+hitbtc   = ccxt.hitbtc({'verbose': True})
+bitmex   = ccxt.bitmex()
+huobipro = ccxt.huobipro()
+exmo     = ccxt.exmo({
+    'apiKey': 'YOUR_PUBLIC_API_KEY',
+    'secret': 'YOUR_SECRET_PRIVATE_KEY',
+})
+kraken = ccxt.kraken({
+    'apiKey': 'YOUR_PUBLIC_API_KEY',
+    'secret': 'YOUR_SECRET_PRIVATE_KEY',
+})
+
+exchange_id = 'binance'
+exchange_class = getattr(ccxt, exchange_id)
+exchange = exchange_class({
+    'apiKey': 'YOUR_API_KEY',
+    'secret': 'YOUR_SECRET',
+})
+
+hitbtc_markets = hitbtc.load_markets()
+
+print(hitbtc.id, hitbtc_markets)
+print(bitmex.id, bitmex.load_markets())
+print(huobipro.id, huobipro.load_markets())
+
+print(hitbtc.fetch_order_book(hitbtc.symbols[0]))
+print(bitmex.fetch_ticker('BTC/USD'))
+print(huobipro.fetch_trades('LTC/USDT'))
+
+print(exmo.fetch_balance())
+
+# sell one ฿ for market price and receive $ right now
+print(exmo.id, exmo.create_market_sell_order('BTC/USD', 1))
+
+# limit buy BTC/EUR, you pay €2500 and receive ฿1  when the order is closed
+print(exmo.id, exmo.create_limit_buy_order('BTC/EUR', 1, 2500.00))
+
+# pass/redefine custom exchange-specific order params: type, amount, price, flags, etc...
+kraken.create_market_buy_order('BTC/USD', 1, {'trading_agreement': 'agree'})
+PHP
+include 'ccxt.php';
+
+$poloniex = new \ccxt\poloniex ();
+$bittrex  = new \ccxt\bittrex  (array ('verbose' => true));
+$quoinex  = new \ccxt\quoinex   ();
+$zaif     = new \ccxt\zaif     (array (
+    'apiKey' => 'YOUR_PUBLIC_API_KEY',
+    'secret' => 'YOUR_SECRET_PRIVATE_KEY',
+));
+$hitbtc   = new \ccxt\hitbtc   (array (
+    'apiKey' => 'YOUR_PUBLIC_API_KEY',
+    'secret' => 'YOUR_SECRET_PRIVATE_KEY',
+));
+
+$exchange_id = 'binance';
+$exchange_class = "\\ccxt\\$exchange_id";
+$exchange = new $exchange_class (array (
+    'apiKey' => 'YOUR_API_KEY',
+    'secret' => 'YOUR_SECRET',
+));
+
+$poloniex_markets = $poloniex->load_markets ();
+
+var_dump ($poloniex_markets);
+var_dump ($bittrex->load_markets ());
+var_dump ($quoinex->load_markets ());
+
+var_dump ($poloniex->fetch_order_book ($poloniex->symbols[0]));
+var_dump ($bittrex->fetch_trades ('BTC/USD'));
+var_dump ($quoinex->fetch_ticker ('ETH/EUR'));
+var_dump ($zaif->fetch_ticker ('BTC/JPY'));
+
+var_dump ($zaif->fetch_balance ());
+
+// sell 1 BTC/JPY for market price, you pay ¥ and receive ฿ immediately
+var_dump ($zaif->id, $zaif->create_market_sell_order ('BTC/JPY', 1));
+
+// buy BTC/JPY, you receive ฿1 for ¥285000# Free Tools and Bots for AfricaCryptoChainx Development
 
 As part of our mission to empower Africa with blockchain technology, **AfricaCryptoChainx** integrates various free tools and bots to streamline development, improve security, and foster community engagement. These resources enable us to build efficient, secure, and scalable DeFi solutions, while maintaining transparency and encouraging participation from all stakeholders.
 
